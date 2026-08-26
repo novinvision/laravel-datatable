@@ -1,0 +1,34 @@
+{
+    "name": "novinvision/laravel-datatable",
+    "description": "A laravel package for show yajra datatables in vue and laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NovinVision",
+            "email": "novinvision.com@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NovinVision\\DataTable\\": "src/"
+        },
+        "files": [
+        ]
+    },
+    "require": {
+        "laravel/framework": "9.0|^10.0|^11.0|^12.0",
+        "inertiajs/inertia-laravel": ">v2.0",
+        "yajra/laravel-datatables": "^12.0",
+        "yajra/laravel-datatables-buttons": "^12.0",
+        "yajra/laravel-datatables-export": "^12.1",
+        "yajra/laravel-datatables-oracle": "^12.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NovinVision\\DataTable\\DataTableServiceProvider"
+            ]
+        }
+    }
+}
