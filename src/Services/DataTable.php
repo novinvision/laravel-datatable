@@ -157,9 +157,9 @@ class DataTable extends \Yajra\DataTables\Services\DataTable
             ->minifiedAjax()
             ->orderBy($this->orderBy)
             ->buttons([
-                \Yajra\DataTables\Html\Button::make('colvis')->className('btn-sm rounded-5')->text('نمایش ستون'),
+                \Yajra\DataTables\Html\Button::make('colvis')->className('btn-sm btn-subtle theme-inverse rounded-5')->text('نمایش ستون'),
             ])
-            ->dom('Q<"datatable-search-panes-collapse"P><"row g-2 align-items-center mb-2"<"col-auto me-auto batch order-1 order-sm-first small text-muted"i><"col-12 col-md-auto fanum ms-auto text-muted text-center order-first order-sm-2"B><"col col-md-auto order-3"f><"col-auto">><"position-relative"r<"table-responsive-xs table-responsive-sm table-responsive-md"t>><"row align-items-center border-top pt-3 mt-3"<"col-auto col-md-auto fanum"l><"col-auto col-sm ms-auto ms-sm-0 fanum my-2 my-lg-0 small text-muted"i><"col d-none d-lg-block"><"col-12 col-sm-auto fanum mt-2 mt-sm-0"p>>');
+            ->dom('Q<"datatable-search-panes-BsCollapse"P><"row g-2 align-items-center mb-2"<"col-auto me-auto batch order-1 order-sm-first small text-muted"i><"col-12 col-md-auto fanum ms-auto text-muted text-center order-first order-sm-2"B><"col col-md-auto order-3"f><"col-auto">><"position-relative"r<"table-responsive-xs table-responsive-sm table-responsive-md"t>><"row align-items-center border-top pt-3 mt-3"<"col-auto col-md-auto fanum"l><"col-auto col-sm ms-auto ms-sm-0 fanum my-2 my-lg-0 small text-muted"i><"col d-none d-lg-block"><"col-12 col-sm-auto fanum mt-2 mt-sm-0"p>>');
     }
 
     public function isEnableSearchBuilder(): bool
