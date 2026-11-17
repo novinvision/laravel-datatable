@@ -229,14 +229,14 @@ class DataTable extends \Yajra\DataTables\Services\DataTable
     public function viewButton($text, $url, $attrs = []): string
     {
         return Html::createLink("<i class=\"fal fa-circle-info align-middle me-1\"></i> {$text}", $url, array_merge($attrs, [
-            'class' => 'btn btn-secondary btn-sm',
+            'class' => 'btn btn-secondary btn-solid theme-secondary btn-sm',
         ]));
     }
 
     public function successButton($text, $url, $attrs = []): string
     {
         return Html::createLink("<i class=\"fal fa-check align-middle me-1\"></i> {$text}", $url, [
-            'class' => 'btn btn-success btn-sm',
+            'class' => 'btn btn-success btn-solid theme-success btn-sm',
             ...$attrs,
         ]);
     }
@@ -244,7 +244,7 @@ class DataTable extends \Yajra\DataTables\Services\DataTable
     public function deleteButton($text, $url, $attrs = []): string
     {
         return Html::createLink("<i class=\"fal fa-trash align-middle me-1\"></i> {$text}", $url, [
-            'class' => 'btn btn-danger btn-sm',
+            'class' => 'btn btn-danger btn-solid theme-danger btn-sm',
             'data-click' => 'confirm',
             ...$attrs,
         ]);
@@ -253,7 +253,7 @@ class DataTable extends \Yajra\DataTables\Services\DataTable
     public function confirmButton($text, $url, $attrs = []): string
     {
         return Html::createLink("<i class=\"fal fa-check align-middle me-1\"></i> {$text}", $url, [
-            'class' => 'btn btn-danger btn-sm',
+            'class' => 'btn btn-danger btn-solid theme-danger btn-sm',
             'data-click' => 'confirm',
             ...$attrs,
         ]);
@@ -262,7 +262,7 @@ class DataTable extends \Yajra\DataTables\Services\DataTable
     public function confirmSuccessButton($text, $url, $attrs = []): string
     {
         return $this->confirmButton($text, $url, [
-            'class' => 'btn btn-success btn-sm',
+            'class' => 'btn btn-success btn-solid theme-success btn-sm',
             ...$attrs
         ]);
     }
